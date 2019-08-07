@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col-xs-4"></div>
+  <div class="col-xs-5">
+  <div style="text-align:left">
+   <div style="size: 80px">
+    <h4 style="justify-self: left">Enter the information below to activate your new  Card.</h4>
+   </div>
+    <br />
+   
+    <div class="row">
+    <p>Enter your 16 digit Credit Card number</p>
+    
+   <input type="password" id="cardnumber" required minlength="16" appShowhidePassword>
+   <div *ngIf="cardnumber.errors.minlength">
+      Card number must be at least 16 characters long.
+    </div>
+    
+    <p>Enter Last 4 digits of the Primary's Social Security Number*</p>
+    <input type="text" style="text-align:left">
+    <p>Enter CVV (3 digit security code)</p>
+    <input type="text" style="text-align:left">
+    <p>Enter Expiration Date (mm/yyyy)</p>
+    <input type="month" id="expdate" appShowhidePassword>
+    <p>
+      <br />
+      
+      <br />
+      <input type="submit" style="text-align:left">
+    </p>
+  </div>
+  </div>
+</div>  
+</div>
